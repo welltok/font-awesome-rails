@@ -13,7 +13,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = Dir["test/**/*"]
   gem.name          = "font-awesome-rails"
   gem.require_paths = ["lib"]
-  gem.version       = Font::Awesome::Rails::VERSION
+  gem.version       = "3.1.1.2.1" # The last digit is a Welltok number added to Font::Awesome::Rails::VERSION
 
   gem.add_dependency "railties", ">= 3.2", "< 5.0"
 
