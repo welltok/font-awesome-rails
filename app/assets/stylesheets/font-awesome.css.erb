@@ -27,8 +27,9 @@
 @font-face {
   font-family: 'FontAwesome';
   /**** CHANGED FONT PATH TO POINT TO OUR S3 BUCKET ON NEXT 2 LINES ****/
-  src: url("//s3.amazonaws.com/cafewell-content/assets/fontawesome-webfont.eot");
-  src: url("//s3.amazonaws.com/cafewell-content/assets/fontawesome-webfont.eot?#iefix")  format('embedded-opentype'), url("//s3.amazonaws.com/cafewell-content/assets/fontawesome-webfont.woff") format('woff'), url('//s3.amazonaws.com/cafewell-content/assets/fontawesome-webfont.ttf') format('truetype'), url('//s3.amazonaws.com/cafewell-content/assets/fontawesome-webfont.svg#fontawesomeregular')  format('svg');
+  /* To upgrade, increment number on version.rb, make new folder on s3 with the version number, add new fonts, change version on subsequent 2 lines, upgrade version in cafewell*/
+  src: url("//s3.amazonaws.com/cafewell-content/assets/fontawesome/3.1.1.2.1/fontawesome-webfont.eot");
+  src: url("//s3.amazonaws.com/cafewell-content/assets/fontawesome/3.1.1.2.1/fontawesome-webfont.eot?#iefix")  format('embedded-opentype'), url("//s3.amazonaws.com/cafewell-content/assets/fontawesome/3.1.1.2.1/fontawesome-webfont.woff") format('woff'), url('//s3.amazonaws.com/cafewell-content/assets/fontawesome/3.1.1.2.1/fontawesome-webfont.ttf') format('truetype'), url('//s3.amazonaws.com/cafewell-content/assets/fontawesome/3.1.1.2.1/fontawesome-webfont.svg#fontawesomeregular')  format('svg');
   font-weight: normal;
   font-style: normal;
 }
