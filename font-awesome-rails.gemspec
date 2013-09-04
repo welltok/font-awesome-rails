@@ -9,11 +9,11 @@ Gem::Specification.new do |gem|
   gem.homepage      = "https://github.com/bokmann/font-awesome-rails"
   gem.licenses      = ["MIT", "SIL Open Font License"]
 
-  gem.files         = Dir["{app,lib,vendor}/**/*"] + ["LICENSE", "Rakefile", "README.md"]
+  gem.files         = Dir["{app,lib}/**/*"] + ["LICENSE", "Rakefile", "README.md"]
   gem.test_files    = Dir["test/**/*"]
   gem.name          = "font-awesome-rails"
   gem.require_paths = ["lib"]
-  gem.version       = "3.1.1.2.1" # The last digit is a Welltok number added to Font::Awesome::Rails::VERSION
+  gem.version       = FontAwesome::Rails::VERSION
 
   gem.add_dependency "railties", ">= 3.2", "< 5.0"
 

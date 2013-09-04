@@ -4,7 +4,7 @@ class FontAwesomeRailsTest < ActionDispatch::IntegrationTest
   teardown { clean_sprockets_cache }
 
   test "engine is loaded" do
-    assert_equal ::Rails::Engine, Font::Awesome::Rails::Engine.superclass
+    assert_equal ::Rails::Engine, FontAwesome::Rails::Engine.superclass
   end
 
   test "fonts are served" do
@@ -47,6 +47,13 @@ class FontAwesomeRailsTest < ActionDispatch::IntegrationTest
   test "stylesheet is available in a scss import" do
     get "/assets/scss-import.css"
     assert_font_awesome(response)
+  end
+
+  test "helpers should be available in the view" do
+    get "/icons"
+    assert_response :success
+    assert_select "i.icon-flag"
+    assert_select "span.icon-stack"
   end
 
   private
