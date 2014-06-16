@@ -20,4 +20,6 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency "activesupport"
   gem.add_development_dependency "tzinfo"
   gem.add_development_dependency "sass-rails"
+
+  gem.metadata['allowed_push_host'] = 'https://gems.cafewelldev.com'
 end
